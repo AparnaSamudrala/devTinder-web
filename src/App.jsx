@@ -1,5 +1,3 @@
-function App() {
-  return <h1>Hello World</h1>;
+export default function App() {
+  return <div className="bg-red-500 text-white p-10">Tailwind test box</div>;
 }
-
-export default App;
