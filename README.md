@@ -32,4 +32,13 @@ daisyui,
 
 we can explore more components here in https://v4.daisyui.com/components/
 
-Add NavBar component to App.jsx
+Add NavBar component to App.jsx as NavBar.jsx
+
+for routing npm install react-router-dom
+
+create BrowserRouter -> Routes -> Route = /Body > RouteChildren/
+
+meaning Route body has navbar, login , profile ,footer etc.. will have children components like login , profile
+so all my child components inside Body wil hav navbar automatically
+-> Create an outlet in Body Component to make child components inside route body to recognize its child compoennts inside Body comp
+-> Create a footer component
