@@ -1,5 +1,11 @@
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: { extend: {} },
-  plugins: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "corporate", "forest"], // add any themes you want
+  },
 };
