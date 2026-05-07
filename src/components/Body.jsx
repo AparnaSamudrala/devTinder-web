@@ -6,7 +6,6 @@ const Body = () => {
   return (
     <div>
       <NavBar />
-      Body
       <Outlet />
       <Footer />
     </div>
