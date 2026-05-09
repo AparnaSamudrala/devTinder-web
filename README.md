@@ -72,5 +72,9 @@ Add redux dev tools extension to chrome
 Login and see if data is coming properly coming in the store.
 Navbar should update as soon as user logs in
 
-Refactor our code to ass constants file in utils folder for base-url
+-Refactor our code to ass constants file in utils folder for base-url
 then moving custom components into components folder
+-You should not be able to access other routes without login
+-If token is not present redirect to login page
+-Logout
+-Profile page
