@@ -26,7 +26,7 @@ const Body = () => {
       //navigate("/");
     } catch (err) {
       //if token is not there or invalid we always redirect to login page
-      if (err.status === 401) {
+      if (err.response?.status === 401) {
         navigate("/login");
       }
 
