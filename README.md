@@ -85,7 +85,8 @@ then moving custom components into components folder
 - New page -> see all my connections
 - New page -> see all my requests
 - feature - accept or reject connection requests
-- Remaining
   -> send/ignore user card from feed
+- Remaining
+
   -> signup new user
   -> E2E testing
