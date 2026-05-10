@@ -81,5 +81,6 @@ then moving custom components into components folder
 -build the user card on feed
 
 - Edit Profile Feature
-- show toast successfully
+- show toast successfully on save profile
+- see all my connections
 -

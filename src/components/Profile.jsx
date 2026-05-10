@@ -6,7 +6,7 @@ const Profile = () => {
   const user = useSelector((store) => store.user);
   return (
     user && (
-      <div>
+      <div className="flex-grow p-6 pb-20">
         <EditProfile user={user} />
       </div>
     )
