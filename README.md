@@ -77,4 +77,9 @@ then moving custom components into components folder
 -You should not be able to access other routes without login
 -If token is not present redirect to login page
 -Logout
--Profile page
+-Get the feed and add the feed in the store
+-build the user card on feed
+
+- Edit Profile Feature
+- show toast successfully
+-
