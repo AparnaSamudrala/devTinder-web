@@ -82,5 +82,10 @@ then moving custom components into components folder
 
 - Edit Profile Feature
 - show toast successfully on save profile
-- see all my connections
--
+- New page -> see all my connections
+- New page -> see all my requests
+- feature - accept or reject connection requests
+- Remaining
+  -> send/ignore user card from feed
+  -> signup new user
+  -> E2E testing
