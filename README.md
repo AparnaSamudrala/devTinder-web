@@ -151,7 +151,9 @@ then moving custom components into components folder
   $ sudo systemctl enable nginx
   -> copy code from dist(build files) to /var/www/html
 
-$ sudo scp -r dist/\* /var/www/html/
+ubuntu@ip-172-31-42-191:~/devTinder-web$
+sudo scp -r dist/\* /var/www/html
+
 check if our dist folder files are copied properly
 goto /var/www/html/ and see list of foles by ls
 $cd /var/www/html/
@@ -220,3 +222,26 @@ ctrl X it asks for save say Y and enter
 now restart our nginx
 sudo systemctl restart nginx
 In devTinder-web update the constants.js BASE_URL to /api
+ubuntu@ip-172-31-42-191:~/devTinder-web$ git pull
+
+-> now on ubuntu git pull for devTinder-web
+since we got the new code we need to build our frontend app
+npm run build
+
+and ubuntu@ip-172-31-42-191:~/devTinder-web$
+sudo scp -r dist/\* /var/www/html
+Adding custom Domian name
+========================
+-purchased domain name from godaddy
+devtinder.live
+-signup on cloudflare and add a domain name
+-change the nameservers on godaddy and point it to cloudflare our job on goDaddy is done after this
+-wait for some time till your nameservers are updated in cloudflare
+Adding DNS record : A devtinder.in public IPv4 address
+======================================================
+-just edit A record and map that to AWS instane public IPv4 address and rest all make same as default.
+
+- # Enable ssl to make our website secure
+  on cloud flare under SSL/TLS -> goto configure -> automatic SSL/TLS default select it and under custom SSl/TLS select flexible
+  -> Now SSL/TLS -> Edge Certificates check for automatic HTTPS rewrites : it shpold be enabled which is by default
+  ->
